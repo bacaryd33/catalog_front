@@ -1,0 +1,10 @@
+#libellecategorie{
+    width: 100%;
+}
+#libellecategorie:hover{
+    font-size: larger;
+    transition: 0.2s;
+}
+#libellecategorie:focus{
+    font-size: larger;
+}

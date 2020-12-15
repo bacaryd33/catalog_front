@@ -1,0 +1,23 @@
+<!--Filtre-->
+<div id="Filter">
+    <app-filter
+    id="Filterelement"
+    libellecategorie="All"
+    ></app-filter>
+    <app-filter
+    id="Filterelement"
+    *ngFor="let pcategorie of categories"
+    libellecategorie={{pcategorie.libelle}}
+    ></app-filter>
+</div>
+<div id="Product_Wall">
+    <app-product 
+    id ="Boxes"
+        *ngFor="let pproduct of productlist" 
+        id = {{pproduct.id}}
+        libelle = {{pproduct.libelle}}
+        reference = {{pproduct.reference}}
+        url = {{pproduct.url}}
+        >
+    </app-product>
+</div>
