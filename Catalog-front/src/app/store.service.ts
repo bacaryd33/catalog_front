@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import "firebase/database";
 import { NavigationEnd, Router } from '@angular/router';
 
 @Injectable({
@@ -23,20 +22,13 @@ export class StoreService {
     return this.httpclient.get('https://catalogapibackend-default-rtdb.europe-west1.firebasedatabase.app/store/categorie.json');
   }
 
-  shuffle(){
-    //affiche le tableau dans un ordre random d'id random
-  }
-
   getProducts(){
-    console.log(this.filterurl);
     if(this.filterurl=="All" || this.filterurl == null){
       this.productlist = this.httpclient.get('https://catalogapibackend-default-rtdb.europe-west1.firebasedatabase.app/store/product.json');
-      console.log(this.productlist);
       return this.productlist;
     }
     else{
       this.productlist = this.httpclient.get('https://catalogapibackend-default-rtdb.europe-west1.firebasedatabase.app/store/productbycategorie/'+this.filterurl+'.json');
-      console.log(this.productlist);
       return this.productlist;
     }
   }

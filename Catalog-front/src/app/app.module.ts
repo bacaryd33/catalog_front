@@ -15,24 +15,10 @@ import { HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { AppRoutingModule } from './app-routing.module';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'; // CLI imports AppRoutingModule
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { SwaggerdocComponent } from './swaggerdoc/swaggerdoc.component'; // CLI imports AppRoutingModule
+// import {generate} from 'swagger-angular-generator';
 
-
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-
-const config = {
-  apiKey: 'AIzaSyDIsAgss9oGJM9awUip9FsH7xGEzrxlltI',
-  authDomain: 'catalogapibackend.firebaseapp.com',
-  databaseURL: 'https://catalogapibackend-default-rtdb.europe-west1.firebasedatabase.app',
-  projectId: 'catalogapibackend',
-  storageBucket: 'catalogapibackend.appspot.com',
-  messagingSenderId: '12206227378',
-  appId: "1:12206227378:web:31fc1a4045a83f4b732eab",
-  measurementId: "G-TTJZPFHN4F"
-};
 
 @NgModule({
   declarations: [
@@ -40,7 +26,8 @@ const config = {
     ProductComponent,
     ProductswallComponent,
     FilterComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    SwaggerdocComponent
   ],
   imports: [
     BrowserModule,
@@ -49,15 +36,14 @@ const config = {
     MatButtonModule,
     MatPaginatorModule,
     HttpClientModule,
-    AppRoutingModule,
-    AngularFireModule.initializeApp(config),
-    AngularFirestoreModule, // firestore
-    AngularFireAuthModule, // auth
-    AngularFireStorageModule // storage
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
+  // const {generate} = require('swagger-angular-generator');
+  // generate('conf/api/api-docs.json', 'src/api'); 
+ 
   
 }

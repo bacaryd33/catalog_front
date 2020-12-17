@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+  <head>
+    <title>API Yeezy Catalogue</title>
+    <style type="text/css">
+      body {
+      	font-family: Trebuchet MS, sans-serif;
+      	font-size: 15px;
+      	color: #444;
+      	margin-right: 24px;
+      }
+      
+      h1	{
+      	font-size: 25px;
+      }
+      h2	{
+      	font-size: 20px;
+      }
+      h3	{
+      	font-size: 16px;
+      	font-weight: bold;
+      }
+      hr	{
+      	height: 1px;
+      	border: 0;
+      	color: #ddd;
+      	background-color: #ddd;
+      }
+      
+      .app-desc {
+        clear: both;
+        margin-left: 20px;
+      }
+      .param-name {
+        width: 100%;
+      }
+      .license-info {
+        margin-left: 20px;
+      }
+      
+      .license-url {
+        margin-left: 20px;
+      }
+      
+      .model {
+        margin: 0 0 0px 20px;
+      }
+      
+      .method {
+        margin-left: 20px;
+      }
+      
+      .method-notes	{
+      	margin: 10px 0 20px 0;
+      	font-size: 90%;
+      	color: #555;
+      }
+      
+      pre {
+        padding: 10px;
+        margin-bottom: 2px;
+      }
+      
+      .http-method {
+       text-transform: uppercase;
+      }
+      
+      pre.get {
+        background-color: #0f6ab4;
+      }
+      
+      pre.post {
+        background-color: #10a54a;
+      }
+      
+      pre.put {
+        background-color: #c5862b;
+      }
+      
+      pre.delete {
+        background-color: #a41e22;
+      }
+      
+      .huge	{
+      	color: #fff;
+      }
+      
+      pre.example {
+        background-color: #f3f3f3;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      
+      code {
+        white-space: pre;
+      }
+      
+      .nickname {
+        font-weight: bold;
+      }
+      
+      .method-path {
+        font-size: 1.5em;
+        background-color: #0f6ab4;
+      }
+      
+      .up {
+        float:right;
+      }
+      
+      .parameter {
+        width: 500px;
+      }
+      
+      .param {
+        width: 500px;
+        padding: 10px 0 0 20px;
+        font-weight: bold;
+      }
+      
+      .param-desc {
+        width: 700px;
+        padding: 0 0 0 20px;
+        color: #777;
+      }
+      
+      .param-type {
+        font-style: italic;
+      }
+      
+      .param-enum-header {
+      width: 700px;
+      padding: 0 0 0 60px;
+      color: #777;
+      font-weight: bold;
+      }
+      
+      .param-enum {
+      width: 700px;
+      padding: 0 0 0 80px;
+      color: #777;
+      font-style: italic;
+      }
+      
+      .field-label {
+        padding: 0;
+        margin: 0;
+        clear: both;
+      }
+      
+      .field-items	{
+      	padding: 0 0 15px 0;
+      	margin-bottom: 15px;
+      }
+      
+      .return-type {
+        clear: both;
+        padding-bottom: 10px;
+      }
+      
+      .param-header {
+        font-weight: bold;
+      }
+      
+      .method-tags {
+        text-align: right;
+      }
+      
+      .method-tag {
+        background: none repeat scroll 0% 0% #24A600;
+        border-radius: 3px;
+        padding: 2px 10px;
+        margin: 2px;
+        color: #FFF;
+        display: inline-block;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>API Yeezy Catalogue</h1>
+    <div class="app-desc">API Catalogue de chaussures de la marque Adidas Edition Yeezy</div>
+    <div class="app-desc">More information: <a href="https://helloreverb.com">https://helloreverb.com</a></div>
+    <div class="app-desc">Contact Info: <a href="bacary.diedhiou@epsi.fr">bacary.diedhiou@epsi.fr</a></div>
+    <div class="app-desc">Version: 1.0.0</div>
+    <div class="app-desc">BasePath:/bacaryd33/Catalog/1.0.0</div>
+    <div class="license-info">Apache 2.0</div>
+    <div class="license-url">http://www.apache.org/licenses/LICENSE-2.0.html</div>
+  <h2>Access</h2>
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  <h3>Table of Contents </h3>
+  <div class="method-summary"></div>
+  <h4><a href="#Client">Client</a></h4>
+  <ul>
+  <li><a href="#get350"><code><span class="http-method">get</span> /700</code></a></li>
+  <li><a href="#get380"><code><span class="http-method">get</span> /380</code></a></li>
+  <li><a href="#get500"><code><span class="http-method">get</span> /500</code></a></li>
+  <li><a href="#getAll"><code><span class="http-method">get</span> /All</code></a></li>
+  <li><a href="#getMVMT"><code><span class="http-method">get</span> /MVMT</code></a></li>
+  <li><a href="#getSlide"><code><span class="http-method">get</span> /Slide</code></a></li>
+  </ul>
+  <h4><a href="#Dveloppeur">Dveloppeur</a></h4>
+  <ul>
+  <li><a href="#swaggerdoc"><code><span class="http-method">get</span> /swaggerdoc</code></a></li>
+  </ul>
+
+  <h1><a name="Client">Client</a></h1>
+  <div class="method"><a name="get350"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /700</code></pre></div>
+    <div class="method-summary">Affiche la liste des produits de l&#x27;édition Yeezy 700 (<span class="nickname">get350</span>)</div>
+    <div class="method-notes">Récupère l&#x27;ensemble des produits de la base de données ayant la catégorie 700 pour les afficher</div>
+
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Met à jour la liste des produits
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    Affiche un message 404
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="get380"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /380</code></pre></div>
+    <div class="method-summary">Affiche la liste des produits de l&#x27;édition Yeezy 380 (<span class="nickname">get380</span>)</div>
+    <div class="method-notes">Récupère l&#x27;ensemble des produits de la base de données ayant la catégorie 380 pour les afficher</div>
+
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Met à jour la liste des produits
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    Affiche un message 404
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="get500"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /500</code></pre></div>
+    <div class="method-summary">Affiche la liste des produits de l&#x27;édition Yeezy 500 (<span class="nickname">get500</span>)</div>
+    <div class="method-notes">Récupère l&#x27;ensemble des produits de la base de données ayant la catégorie 500 pour les afficher</div>
+
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Met à jour la liste des produits
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    Affiche un message 404
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getAll"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /All</code></pre></div>
+    <div class="method-summary">Affiche la liste de tous les produits (<span class="nickname">getAll</span>)</div>
+    <div class="method-notes">Récupère l&#x27;ensemble des produits de la base de données pour les afficher</div>
+
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Met à jour la liste des produits
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    Affiche un message 404
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getMVMT"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /MVMT</code></pre></div>
+    <div class="method-summary">Affiche la liste des produits de l&#x27;édition Yeezy MVMT (<span class="nickname">getMVMT</span>)</div>
+    <div class="method-notes">Récupère l&#x27;ensemble des produits de la base de données ayant la catégorie MVMT pour les afficher</div>
+
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Met à jour la liste des produits
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    Affiche un message 404
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getSlide"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Slide</code></pre></div>
+    <div class="method-summary">Affiche la liste des produits de l&#x27;édition Yeezy SLide (<span class="nickname">getSlide</span>)</div>
+    <div class="method-notes">Récupère l&#x27;ensemble des produits de la base de données ayant la catégorie Slide pour les afficher</div>
+
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Met à jour la liste des produits
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    Affiche un message 404
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <h1><a name="Dveloppeur">Dveloppeur</a></h1>
+  <div class="method"><a name="swaggerdoc"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /swaggerdoc</code></pre></div>
+    <div class="method-summary">Affiche la documentation swagger (<span class="nickname">swaggerdoc</span>)</div>
+    <div class="method-notes">navigue jusqu&#x27;à la page de documentation</div>
+
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Navigue vers nouvelle page
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    Affiche le composant de page introuvable
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#app"><code>app</code></a></li>
+    <li><a href="#filter"><code>filter</code></a></li>
+    <li><a href="#pagenotfound"><code>pagenotfound</code></a></li>
+    <li><a href="#product"><code>product</code></a></li>
+    <li><a href="#productswall"><code>productswall</code></a></li>
+  </ol>
+
+  <div class="model">
+    <h3><a name="app"><code>app</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">pagenotfound </div><div class="param-desc"><span class="param-type"><a href="#pagenotfound">pagenotfound</a></span>  </div>
+<div class="param">productwall </div><div class="param-desc"><span class="param-type"><a href="#productswall">productswall</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="filter"><code>filter</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">categorielist </div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="pagenotfound"><code>pagenotfound</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+          </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="product"><code>product</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">id </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">libelle </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Sand</span></div>
+<div class="param">reference </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Yeezy Boost 350</span></div>
+<div class="param">url </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: /assets/350/sand.png</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="productswall"><code>productswall</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">filter </div><div class="param-desc"><span class="param-type"><a href="#filter">filter</a></span>  </div>
+<div class="param">productlist </div><div class="param-desc"><span class="param-type"><a href="#product">product</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  </body>
+</html>
